@@ -1,10 +1,10 @@
 export class User {
     email: string;
-    name: string;
+    name?: string;
 
-    constructor()
+    constructor(email: string = '', name?: string)
     {
-        this.email = '';
-        this.name = '';
+    this.email = '';
+    this.name = '';
     }
 }
