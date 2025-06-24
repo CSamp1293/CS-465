@@ -11,8 +11,8 @@ The backend used a NoSQL MongoDB database for flexibility and scalablity. MongoD
 **JSON (JavaScript Object Notation)** is a lightweight data format that is distinct from JavaScript but inspired by its syntax. It is used for serializing structured data and is essential in transmitting information between the frontend and backend. JSON serves as the common language of data transfer in RESTful APIs, allowing Angular to send and receive structured data to and from Express and MongoDB.
 <br>
  Several instances of code refactoring occurred throughout this project:
- * Refactoring the login flow to remove the unused ==name== field made authentication cleaner.
- * Restructuring the ==TripData== service in Angular to encapsulate API calls allowed for greater reusability and maintainability.
- * Creating reusable components like ==TripCard== and ==TripListing== made the UI modular and scalable.
+ * Refactoring the login flow to remove the unused `name` field made authentication cleaner.
+ * Restructuring the `TripData` service in Angular to encapsulate API calls allowed for greater reusability and maintainability.
+ * Creating reusable components like `TripCard` and `TripListing` made the UI modular and scalable.
 <br>
 These changes improved efficiency, reduced duplication, and allowed for consistent UI behavior across components.
