@@ -4,6 +4,7 @@
 This project utilized two different styles of front-end development:
 * Express HTML & JavaScript: The original server-rendered pages used Handlebars (HBS) as a templating engine within the Express.js app. This allowed for dynamic HTML generation on the server based on data from MongoDB. It's useful for simple, multi-page websites with traditional navigation.
 * Angular Single Page Application (SPA): For the admin site, a modern Angular SPA was implemented. Angular offers dynamic routing, reusable components, two-way data binding, and seamless client-side state management. This architecture is faster and more responsive from a user experience perspective.
+<br>
 The backend used a NoSQL MongoDB database for flexibility and scalablity. MongoDB allows for dynamic schemas, which is ideal for representing complex and varied travel datalike trips, rooms, and user accounts. Its integration with Mongoose also made modeling and querying data intuitive on the server side.
 
  ## Functionality
@@ -12,4 +13,5 @@ The backend used a NoSQL MongoDB database for flexibility and scalablity. MongoD
  * Refactoring the login flow to remove the unused name field made authentication cleaner.
  * Restructuring the TripData service in Angular to encapsulate API calls allowed for greater reusability and maintainability.
  * Creating reusable components like TripCard and TripListing made the UI modular and scalable.
+<br>
 These changes improved efficiency, reduced duplication, and allowed for consistent UI behavior across components.
