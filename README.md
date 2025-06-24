@@ -16,3 +16,16 @@ The backend used a NoSQL MongoDB database for flexibility and scalablity. MongoD
  * Creating reusable components like `TripCard` and `TripListing` made the UI modular and scalable.
 <br>
 These changes improved efficiency, reduced duplication, and allowed for consistent UI behavior across components.
+
+## Testing
+API testing included verifying all `GET`, `POST`, `PUT`, and `DELETE` routes via tools like Postman and through Angular's network tab. Secure endpoints required attaching a JWT token in the `Authorization` header, which added complexity but ensured the system was protected.
+<br>
+For example:
+* Testing `GET /api/trips` confirmed public data could be accessed without a token.
+* Testing `POST /api/trips` validated that only authorized users (admins with valid JWTs) could create or modify data.
+* Testing login and logout behavior ensured token creation and invalidation worked correctly across sessions.
+<br>
+Security layers make automated testign harder because test scripts must simulate login and manage token storage/reuse. Still, testing APIs is essential to confirm access control is enforced correctly.
+
+## Reflection
+This course significantly helped me grow both technically and professionally. I now have experience developing a complete full stack web application from the ground up, using tools that are in high demand (MongoDB, Express, Angular, Node.js). I learned how to structure scalable frontend and backend code, connect and manage NoSQL databases, build and test RESTful APIs, Implement sercure authentication using JWTs, and create modular and reusable UI components in Angular. These skills have given me the confidence to pursue web development roles. I have a better understanding of the full lifecycle of a professional-grade web app and am better prepared for real-world software development environments.
